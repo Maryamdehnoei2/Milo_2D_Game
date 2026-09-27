@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DiamondCollision : MonoBehaviour
 {
+    [SerializeField] private DiamondManager diamondManager;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class DiamondCollision : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
+            diamondManager.AddDiamond();
             Destroy(gameObject);
         }    
     }
