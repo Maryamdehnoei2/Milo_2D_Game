@@ -1,16 +1,18 @@
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DiamondUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private TMP_Text diamondText;
+    [SerializeField] private DiamondManager diamondManager;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        diamondText.text = diamondManager.Diamond.ToString();
     }
 }
