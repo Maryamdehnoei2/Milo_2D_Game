@@ -11,6 +11,7 @@ public class Story : MonoBehaviour
     [SerializeField] private GameObject trainingPanel;
     [SerializeField] private GameObject heartPanel;
     [SerializeField] private GameObject pearlPanel;
+    [SerializeField] private GameObject diamondPanel;
     void Start()
     {
         Time.timeScale = 0;
@@ -54,6 +55,7 @@ public class Story : MonoBehaviour
         trainingPanel.SetActive(false);
         heartPanel.SetActive(true);
         pearlPanel.SetActive(true);
+        diamondPanel.SetActive(true);
         Time.timeScale = 1;
     }
 }

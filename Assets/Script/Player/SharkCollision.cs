@@ -6,6 +6,7 @@ public class SharkCollision : MonoBehaviour
     [SerializeField] private GameObject gameoverPanel;
     [SerializeField] private GameObject heartPanel;
     [SerializeField] private GameObject pearlPanel;
+    [SerializeField] private GameObject diamondPanel;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class SharkCollision : MonoBehaviour
             gameoverPanel.SetActive(true);
             heartPanel.SetActive(false);
             pearlPanel.SetActive(false);
+            diamondPanel.SetActive(false);
         }
     }
 }
