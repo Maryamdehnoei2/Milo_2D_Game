@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private GameObject[] heart;
     [SerializeField] private GameObject heartPanel;
     [SerializeField] private GameObject pearlPanel;
+    [SerializeField] private GameObject diamondPanel;
     void Start()
     {
         
@@ -29,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
         {
             heartPanel.SetActive(false);
             pearlPanel.SetActive(false);
+            diamondPanel.SetActive(false);
             gameoverPanel.SetActive(true);
 
         }

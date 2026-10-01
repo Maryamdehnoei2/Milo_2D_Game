@@ -5,6 +5,7 @@ public class WinScript : MonoBehaviour
     [SerializeField] private GameObject winPanel;
     [SerializeField] private GameObject heartPanel;
     [SerializeField] private GameObject pearlPanel;
+    [SerializeField] private GameObject diamonPanel;
 
     void Start()
     {
@@ -23,7 +24,7 @@ public class WinScript : MonoBehaviour
             winPanel.SetActive(true);
             heartPanel.SetActive(false);
             pearlPanel.SetActive(false);
-            
+            diamonPanel.SetActive(false);
         }
     }
 }
