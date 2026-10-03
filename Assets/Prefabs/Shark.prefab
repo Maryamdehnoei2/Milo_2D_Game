@@ -180,6 +180,7 @@ MonoBehaviour:
   speedShark: 1.5
   moveDistanse: 15
   sharkSprite: {fileID: 3411499583653639243}
+  isChase: 0
 --- !u!50 &1756708528473951536
 Rigidbody2D:
   serializedVersion: 5
@@ -217,6 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2937039771995470926}
   - component: {fileID: 461604479123958653}
+  - component: {fileID: 1150828381737580754}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: SharkDetection
@@ -273,7 +275,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.08416176, y: 0.26354504}
+  m_Offset: {x: -0.23493862, y: 0.11276913}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -283,5 +285,21 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 23.588936, y: 9.831665}
+  m_Size: {x: 22.98583, y: 3.8006115}
   m_EdgeRadius: 0
+--- !u!114 &1150828381737580754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4450682236424700374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5e8d8f5372bd24a9f42d4a12ccdc87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SharkChase
+  transformPlayer: {fileID: 0}
+  speed: 2.5
+  isFishInRange: 0
+  sharkSprite: {fileID: 0}
