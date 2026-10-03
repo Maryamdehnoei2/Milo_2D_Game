@@ -10,6 +10,7 @@ TagManager:
   - JellyfishHead
   - Pearl
   - Diamond
+  - SharkDetection
   layers:
   - Default
   - TransparentFX
