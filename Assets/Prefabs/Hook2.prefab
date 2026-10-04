@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9195408912369559611}
   - component: {fileID: 3449951659520939114}
   - component: {fileID: 7798164013870855958}
+  - component: {fileID: 6516086864701046718}
   m_Layer: 0
   m_Name: Hook2
   m_TagString: Untagged
@@ -128,3 +129,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.019264221, y: -2.3116283}
   m_Radius: 1.0884895
+--- !u!114 &6516086864701046718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4135859134826724236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff8ad50570566a4fa1fea323ccad67c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hook
+  gameoverPanel: {fileID: 0}
+  heartPanel: {fileID: 0}
+  pearlPanel: {fileID: 0}
+  diamondPanel: {fileID: 0}
