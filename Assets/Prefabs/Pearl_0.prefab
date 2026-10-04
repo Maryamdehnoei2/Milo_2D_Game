@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PearlCollision
   pearlManager: {fileID: 0}
+  pearlSound: {fileID: 49903288721857540}
 --- !u!82 &49903288721857540
 AudioSource:
   m_ObjectHideFlags: 0

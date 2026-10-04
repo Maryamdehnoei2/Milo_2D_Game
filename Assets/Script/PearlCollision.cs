@@ -3,6 +3,7 @@ using UnityEngine;
 public class PearlCollision : MonoBehaviour
 {
     [SerializeField] private PearlManager pearlManager;
+    [SerializeField] private AudioSource pearlSound;
     void Start()
     {
         
