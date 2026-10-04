@@ -3,6 +3,7 @@ using UnityEngine;
 public class JellyfishCollision : MonoBehaviour
 {
     [SerializeField] private PlayerHealth playerHealth;
+    [SerializeField] private AudioSource jellyfishSound;
     void Start()
     {
         
