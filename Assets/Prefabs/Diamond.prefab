@@ -151,3 +151,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c082d7ec693cd1c498c4f7c529e359a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DiamondCollision
+  diamondManager: {fileID: 0}
+  diamondSound: {fileID: 8300000, guid: ba71acb166a99a84691ab700925c7ee4, type: 3}
