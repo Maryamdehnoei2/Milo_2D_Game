@@ -9,9 +9,11 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private GameObject heartPanel;
     [SerializeField] private GameObject pearlPanel;
     [SerializeField] private GameObject diamondPanel;
+    private ShieldCollision shieldCollision;
+    
     void Start()
     {
-        
+        shieldCollision = GetComponent<ShieldCollision>();
     }
 
     void Update()
@@ -21,18 +23,22 @@ public class PlayerHealth : MonoBehaviour
 
     public void Damage()
     {
-        health--;
-        if(health>=0)
+        if(!shieldCollision.IsShieldActive)
         {
-            heart[health].SetActive(false);
-        }
-        if (health <= 0)
-        {
-            heartPanel.SetActive(false);
-            pearlPanel.SetActive(false);
-            diamondPanel.SetActive(false);
-            gameoverPanel.SetActive(true);
+            health--;
+            if (health >= 0)
+            {
+                heart[health].SetActive(false);
+            }
+            if (health <= 0)
+            {
+                heartPanel.SetActive(false);
+                pearlPanel.SetActive(false);
+                diamondPanel.SetActive(false);
+                gameoverPanel.SetActive(true);
 
+            }
         }
+        
     }
 }
