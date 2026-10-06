@@ -4,9 +4,10 @@ using UnityEngine;
 public class ShieldCollision : MonoBehaviour
 {
     public bool IsShieldActive;
+    private SpriteRenderer shield;
     void Start()
     {
-
+        shield = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -15,19 +16,19 @@ public class ShieldCollision : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             IsShieldActive = true;
-            Destroy(gameObject);
             StartCoroutine(DisableShield());
+            shield.enabled = false;
         }
     }
 
     IEnumerator DisableShield()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSecondsRealtime(5f);
         IsShieldActive = false;
     }
 }
