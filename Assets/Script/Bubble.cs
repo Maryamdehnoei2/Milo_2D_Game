@@ -3,11 +3,10 @@ using UnityEngine;
 
 public class Bubble : MonoBehaviour
 {
-    private ShieldCollision shieldCollision;
+    [SerializeField] private ShieldCollision shieldCollision;
     [SerializeField] private GameObject bubble;
     void Start()
     {
-        shieldCollision = GetComponent<ShieldCollision>();
     }
 
     void Update()
