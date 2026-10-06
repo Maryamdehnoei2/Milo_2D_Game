@@ -7,10 +7,10 @@ public class Hook : MonoBehaviour
     [SerializeField] private GameObject heartPanel;
     [SerializeField] private GameObject pearlPanel;
     [SerializeField] private GameObject diamondPanel;
-
+    private ShieldCollision shieldCollision;
     void Start()
     {
-        
+        shieldCollision = GetComponent<ShieldCollision>();
     }
 
     void Update()
@@ -20,7 +20,7 @@ public class Hook : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if(collision.gameObject.CompareTag("Player") && !shieldCollision.IsShieldActive)
         {
             Time.timeScale = 0;
             gameoverPanel.SetActive(true);
