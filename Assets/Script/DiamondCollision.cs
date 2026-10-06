@@ -3,6 +3,7 @@ using UnityEngine;
 public class DiamondCollision : MonoBehaviour
 {
     [SerializeField] private DiamondManager diamondManager;
+    [SerializeField] private AudioClip diamondSound;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class DiamondCollision : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             diamondManager.AddDiamond();
+            AudioSource.PlayClipAtPoint(diamondSound, transform.position);
             Destroy(gameObject);
         }    
     }
