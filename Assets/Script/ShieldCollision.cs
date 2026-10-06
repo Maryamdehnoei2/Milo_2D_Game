@@ -1,16 +1,33 @@
+using System.Collections;
 using UnityEngine;
 
 public class ShieldCollision : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public bool IsShieldActive;
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            IsShieldActive = true;
+            Destroy(gameObject);
+            StartCoroutine(DisableShield());
+        }
+    }
+
+    IEnumerator DisableShield()
+    {
+        yield return new WaitForSeconds(5f);
+        IsShieldActive = false;
     }
 }
