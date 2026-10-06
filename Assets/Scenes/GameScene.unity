@@ -1535,7 +1535,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: f5efb6cb18bd46540ad575ac8751e0a1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4334,7 +4334,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: f43369326376b304e9a22d9fa62b6f72, type: 3}
+  m_Resource: {fileID: 8300000, guid: ff6ddd8a2bb794e4b8ceea949484d1e0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4583,6 +4583,11 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!212 &996105023 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3411499583653639243, guid: 77add51b0c2fc02499b02a446cded4d1, type: 3}
+  m_PrefabInstance: {fileID: 9047223944692414866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1003730707
 GameObject:
   m_ObjectHideFlags: 0
@@ -6338,6 +6343,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shark (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1150828381737580754, guid: 77add51b0c2fc02499b02a446cded4d1, type: 3}
+      propertyPath: sharkSprite
+      value: 
+      objectReference: {fileID: 996105023}
+    - target: {fileID: 1150828381737580754, guid: 77add51b0c2fc02499b02a446cded4d1, type: 3}
+      propertyPath: transformPlayer
+      value: 
+      objectReference: {fileID: 934854697}
     - target: {fileID: 5571653540187032910, guid: 77add51b0c2fc02499b02a446cded4d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31.38
@@ -6754,6 +6767,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1917370782}
     m_Modifications:
     - target: {fileID: 2556037516901193845, guid: abd8bba1a5a489c428a038bedec8cdb8, type: 3}
+      propertyPath: pearlSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2556037516901193845, guid: abd8bba1a5a489c428a038bedec8cdb8, type: 3}
       propertyPath: pearlManager
       value: 
       objectReference: {fileID: 245793154}
@@ -6907,6 +6924,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shark (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1150828381737580754, guid: 77add51b0c2fc02499b02a446cded4d1, type: 3}
+      propertyPath: sharkSprite
+      value: 
+      objectReference: {fileID: 1828613962}
+    - target: {fileID: 1150828381737580754, guid: 77add51b0c2fc02499b02a446cded4d1, type: 3}
+      propertyPath: transformPlayer
+      value: 
+      objectReference: {fileID: 934854697}
     - target: {fileID: 5571653540187032910, guid: 77add51b0c2fc02499b02a446cded4d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -88.25
@@ -6955,6 +6980,11 @@ PrefabInstance:
 --- !u!4 &1828613957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5571653540187032910, guid: 77add51b0c2fc02499b02a446cded4d1, type: 3}
+  m_PrefabInstance: {fileID: 1828613956}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1828613962 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3411499583653639243, guid: 77add51b0c2fc02499b02a446cded4d1, type: 3}
   m_PrefabInstance: {fileID: 1828613956}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1847930385
@@ -8276,6 +8306,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shark
       objectReference: {fileID: 0}
+    - target: {fileID: 1150828381737580754, guid: 77add51b0c2fc02499b02a446cded4d1, type: 3}
+      propertyPath: sharkSprite
+      value: 
+      objectReference: {fileID: 996105023}
+    - target: {fileID: 1150828381737580754, guid: 77add51b0c2fc02499b02a446cded4d1, type: 3}
+      propertyPath: transformPlayer
+      value: 
+      objectReference: {fileID: 934854697}
     - target: {fileID: 5571653540187032910, guid: 77add51b0c2fc02499b02a446cded4d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -125.42642
