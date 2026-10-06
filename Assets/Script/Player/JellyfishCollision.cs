@@ -20,6 +20,7 @@ public class JellyfishCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Jellyfish"))
         {
+            jellyfishSound.Play();
             playerHealth.Damage();
         }
        
@@ -29,6 +30,7 @@ public class JellyfishCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("JellyfishHead"))
         {
+            
             Destroy(collision.transform.parent.gameObject);
         }
     }
