@@ -9,11 +9,10 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private GameObject heartPanel;
     [SerializeField] private GameObject pearlPanel;
     [SerializeField] private GameObject diamondPanel;
-    private ShieldCollision shieldCollision;
+    [SerializeField] private ShieldCollision shieldCollision;
     
     void Start()
     {
-        shieldCollision = GetComponent<ShieldCollision>();
     }
 
     void Update()
