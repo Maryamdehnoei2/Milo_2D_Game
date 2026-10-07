@@ -599,6 +599,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 490393353}
     m_Modifications:
+    - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
+      propertyPath: heartPanel
+      value: 
+      objectReference: {fileID: 1023847876}
+    - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
+      propertyPath: pearlPanel
+      value: 
+      objectReference: {fileID: 1979991206}
+    - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
+      propertyPath: diamondPanel
+      value: 
+      objectReference: {fileID: 1971759786}
+    - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
+      propertyPath: gameoverPanel
+      value: 
+      objectReference: {fileID: 1370459553}
+    - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
+      propertyPath: shieldCollision
+      value: 
+      objectReference: {fileID: 1378139074}
     - target: {fileID: 4175095185777273369, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 98.0818
@@ -1724,6 +1744,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 490393353}
     m_Modifications:
+    - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
+      propertyPath: heartPanel
+      value: 
+      objectReference: {fileID: 1023847876}
+    - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
+      propertyPath: pearlPanel
+      value: 
+      objectReference: {fileID: 1979991206}
+    - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
+      propertyPath: diamondPanel
+      value: 
+      objectReference: {fileID: 1971759786}
+    - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
+      propertyPath: gameoverPanel
+      value: 
+      objectReference: {fileID: 1370459553}
+    - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
+      propertyPath: shieldCollision
+      value: 
+      objectReference: {fileID: 1378139074}
     - target: {fileID: 4175095185777273369, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 32.37267
@@ -2137,6 +2177,10 @@ PrefabInstance:
       propertyPath: gameoverPanel
       value: 
       objectReference: {fileID: 1370459553}
+    - target: {fileID: 6516086864701046718, guid: 2f97ac6aa0827944db1e1050bfc707c2, type: 3}
+      propertyPath: shieldCollision
+      value: 
+      objectReference: {fileID: 1378139074}
     - target: {fileID: 9195408912369559611, guid: 2f97ac6aa0827944db1e1050bfc707c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.7665596
@@ -3011,6 +3055,10 @@ PrefabInstance:
       propertyPath: gameoverPanel
       value: 
       objectReference: {fileID: 1370459553}
+    - target: {fileID: 6516086864701046718, guid: 2f97ac6aa0827944db1e1050bfc707c2, type: 3}
+      propertyPath: shieldCollision
+      value: 
+      objectReference: {fileID: 1378139074}
     - target: {fileID: 9195408912369559611, guid: 2f97ac6aa0827944db1e1050bfc707c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -51.21322
@@ -4322,6 +4370,7 @@ MonoBehaviour:
   heartPanel: {fileID: 1023847876}
   pearlPanel: {fileID: 1979991206}
   diamondPanel: {fileID: 1971759786}
+  shieldCollision: {fileID: 1378139074}
 --- !u!114 &934854702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4357,6 +4406,7 @@ MonoBehaviour:
   heartPanel: {fileID: 1023847876}
   pearlPanel: {fileID: 1979991206}
   diamondPanel: {fileID: 1971759786}
+  shieldCollision: {fileID: 1378139074}
 --- !u!82 &934854704
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4468,6 +4518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bubble
   shieldCollision: {fileID: 1378139074}
   bubble: {fileID: 1417771333}
+  fish: {fileID: 934854696}
 --- !u!1 &935678046
 GameObject:
   m_ObjectHideFlags: 0
