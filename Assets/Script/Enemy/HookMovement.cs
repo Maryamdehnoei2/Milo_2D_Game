@@ -7,6 +7,7 @@ public class HookMovement : MonoBehaviour
     [SerializeField] private Vector3 startPosition;
     [SerializeField] private float speed;
     [SerializeField] private float moveDistanse = 3;
+    [SerializeField] private Hook hook;
     void Start()
     {
         startPosition = transform.position;
@@ -14,7 +15,15 @@ public class HookMovement : MonoBehaviour
 
     void Update()
     {
-        Movement();
+        if(hook.IsFishCaught)
+        {
+            transform.position += Vector3.up * speed * Time.deltaTime;
+        }
+        else
+        {
+            Movement();
+        }
+       
     }
 
     void Movement()

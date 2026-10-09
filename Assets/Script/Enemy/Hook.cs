@@ -11,6 +11,7 @@ public class Hook : MonoBehaviour
     [SerializeField] private ShieldCollision shieldCollision;
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private Rigidbody2D rigidbodyPlayer;
+    public bool IsFishCaught = false;
     void Start()
     {
     }
@@ -24,7 +25,7 @@ public class Hook : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && !shieldCollision.IsShieldActive)
         {
-           
+            IsFishCaught = true;
             playerMovement.enabled = false;
             rigidbodyPlayer.linearVelocity = Vector2.zero;
             rigidbodyPlayer.gravityScale = 0;
