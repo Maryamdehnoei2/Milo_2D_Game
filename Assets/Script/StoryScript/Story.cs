@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -9,9 +10,7 @@ public class Story : MonoBehaviour
     [SerializeField] private GameObject nextButton;
 
     [SerializeField] private GameObject trainingPanel;
-    [SerializeField] private GameObject heartPanel;
-    [SerializeField] private GameObject pearlPanel;
-    [SerializeField] private GameObject diamondPanel;
+    [SerializeField] private UIPanel uIPanel;
     void Start()
     {
         Time.timeScale = 0;
@@ -53,9 +52,7 @@ public class Story : MonoBehaviour
 
     {
         trainingPanel.SetActive(false);
-        heartPanel.SetActive(true);
-        pearlPanel.SetActive(true);
-        diamondPanel.SetActive(true);
+        uIPanel.ActivePanel();
         Time.timeScale = 1;
     }
 }
