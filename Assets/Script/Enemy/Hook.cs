@@ -1,17 +1,17 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Hook : MonoBehaviour
 {
 
     [SerializeField] private GameObject gameoverPanel;
-    [SerializeField] private GameObject heartPanel;
-    [SerializeField] private GameObject pearlPanel;
-    [SerializeField] private GameObject diamondPanel;
+    
     [SerializeField] private ShieldCollision shieldCollision;
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private Rigidbody2D rigidbodyPlayer;
     public bool IsFishCaught = false;
+    [SerializeField] private UIPanel uIPanel;
     void Start()
     {
     }
@@ -37,9 +37,7 @@ public class Hook : MonoBehaviour
     {
         Time.timeScale = 0;
         gameoverPanel.SetActive(true);
-        heartPanel.SetActive(false);
-        pearlPanel.SetActive(false);
-        diamondPanel.SetActive(false);
+        uIPanel.InactivePanel();
     }
 }
 

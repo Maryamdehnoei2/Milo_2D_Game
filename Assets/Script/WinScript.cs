@@ -1,12 +1,11 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WinScript : MonoBehaviour
 {
     [SerializeField] private GameObject winPanel;
-    [SerializeField] private GameObject heartPanel;
-    [SerializeField] private GameObject pearlPanel;
-    [SerializeField] private GameObject diamonPanel;
-
+   
+    [SerializeField] private UIPanel uIPanel;
     void Start()
     {
         
@@ -22,9 +21,7 @@ public class WinScript : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             winPanel.SetActive(true);
-            heartPanel.SetActive(false);
-            pearlPanel.SetActive(false);
-            diamonPanel.SetActive(false);
+            uIPanel.InactivePanel();
         }
     }
 }
