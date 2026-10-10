@@ -600,6 +600,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 490393353}
     m_Modifications:
     - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
+      propertyPath: uIPanel
+      value: 
+      objectReference: {fileID: 245793160}
+    - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
       propertyPath: heartPanel
       value: 
       objectReference: {fileID: 1023847876}
@@ -814,9 +818,7 @@ MonoBehaviour:
   - {fileID: 993198403}
   nextButton: {fileID: 1284456236}
   trainingPanel: {fileID: 233332855}
-  heartPanel: {fileID: 1023847876}
-  pearlPanel: {fileID: 1979991206}
-  diamondPanel: {fileID: 1971759786}
+  uIPanel: {fileID: 245793160}
 --- !u!114 &157133157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1487,6 +1489,7 @@ GameObject:
   - component: {fileID: 245793157}
   - component: {fileID: 245793158}
   - component: {fileID: 245793159}
+  - component: {fileID: 245793160}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -1674,6 +1677,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DiamondUI
   diamondText: {fileID: 1936411866}
   diamondManager: {fileID: 245793158}
+--- !u!114 &245793160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245793151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d5672661db6cc4ab847c0efe313c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
+  heartPanel: {fileID: 1023847876}
+  pearlPanel: {fileID: 1979991206}
+  diamondPanel: {fileID: 1971759786}
 --- !u!1001 &251495023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1752,6 +1770,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 490393353}
     m_Modifications:
+    - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
+      propertyPath: uIPanel
+      value: 
+      objectReference: {fileID: 245793160}
     - target: {fileID: 93867575028828360, guid: 2196f21ab6d536f439985d1b4e7848c8, type: 3}
       propertyPath: heartPanel
       value: 
@@ -2177,6 +2199,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hook2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6516086864701046718, guid: 2f97ac6aa0827944db1e1050bfc707c2, type: 3}
+      propertyPath: uIPanel
+      value: 
+      objectReference: {fileID: 245793160}
     - target: {fileID: 6516086864701046718, guid: 2f97ac6aa0827944db1e1050bfc707c2, type: 3}
       propertyPath: heartPanel
       value: 
@@ -2862,9 +2888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WinScript
   winPanel: {fileID: 2093342075}
-  heartPanel: {fileID: 1023847876}
-  pearlPanel: {fileID: 1979991206}
-  diamonPanel: {fileID: 1971759786}
+  uIPanel: {fileID: 0}
 --- !u!61 &498461915
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3063,6 +3087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hook2
       objectReference: {fileID: 0}
+    - target: {fileID: 6516086864701046718, guid: 2f97ac6aa0827944db1e1050bfc707c2, type: 3}
+      propertyPath: uIPanel
+      value: 
+      objectReference: {fileID: 245793160}
     - target: {fileID: 6516086864701046718, guid: 2f97ac6aa0827944db1e1050bfc707c2, type: 3}
       propertyPath: heartPanel
       value: 
@@ -4399,10 +4427,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SharkCollision
   gameoverPanel: {fileID: 1370459553}
-  heartPanel: {fileID: 1023847876}
-  pearlPanel: {fileID: 1979991206}
-  diamondPanel: {fileID: 1971759786}
   shieldCollision: {fileID: 1378139074}
+  uIPanel: {fileID: 245793160}
 --- !u!114 &934854702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4435,10 +4461,8 @@ MonoBehaviour:
   - {fileID: 935678046}
   - {fileID: 854000338}
   - {fileID: 1273096023}
-  heartPanel: {fileID: 1023847876}
-  pearlPanel: {fileID: 1979991206}
-  diamondPanel: {fileID: 1971759786}
   shieldCollision: {fileID: 1378139074}
+  uIPanel: {fileID: 245793160}
 --- !u!82 &934854704
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5046,7 +5070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -349.1201, y: 123}
+  m_AnchoredPosition: {x: -349.12012, y: 123}
   m_SizeDelta: {x: -698.24, y: -334.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1023847878
@@ -7956,7 +7980,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -343.99985, y: 163}
+  m_AnchoredPosition: {x: -343.99988, y: 163}
   m_SizeDelta: {x: -698.24, y: -324.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1979991208
