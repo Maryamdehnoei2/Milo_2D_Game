@@ -22,7 +22,7 @@ public class SharkCollision : MonoBehaviour
         {
             Time.timeScale = 0;
             gameoverPanel.SetActive(true);
-            uIPanel.ActivePanel();
+            uIPanel.InactivePanel();
         }
     }
 }
