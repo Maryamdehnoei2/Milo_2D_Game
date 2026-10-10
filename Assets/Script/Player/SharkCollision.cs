@@ -4,11 +4,9 @@ using UnityEngine;
 public class SharkCollision : MonoBehaviour
 {
     [SerializeField] private GameObject gameoverPanel;
-    [SerializeField] private GameObject heartPanel;
-    [SerializeField] private GameObject pearlPanel;
-    [SerializeField] private GameObject diamondPanel;
+    
     [SerializeField] private ShieldCollision shieldCollision;
-
+    [SerializeField] private UIPanel uIPanel;
     void Start()
     {
     }
@@ -24,9 +22,7 @@ public class SharkCollision : MonoBehaviour
         {
             Time.timeScale = 0;
             gameoverPanel.SetActive(true);
-            heartPanel.SetActive(false);
-            pearlPanel.SetActive(false);
-            diamondPanel.SetActive(false);
+            uIPanel.ActivePanel();
         }
     }
 }
