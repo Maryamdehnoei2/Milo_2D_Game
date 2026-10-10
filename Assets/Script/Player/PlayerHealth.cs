@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -6,10 +7,9 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private int health;
     [SerializeField] private GameObject gameoverPanel;
     [SerializeField] private GameObject[] heart;
-    [SerializeField] private GameObject heartPanel;
-    [SerializeField] private GameObject pearlPanel;
-    [SerializeField] private GameObject diamondPanel;
+    
     [SerializeField] private ShieldCollision shieldCollision;
+    [SerializeField] private UIPanel uIPanel;
     
     void Start()
     {
@@ -31,9 +31,7 @@ public class PlayerHealth : MonoBehaviour
             }
             if (health <= 0)
             {
-                heartPanel.SetActive(false);
-                pearlPanel.SetActive(false);
-                diamondPanel.SetActive(false);
+                uIPanel.InactivePanel();
                 gameoverPanel.SetActive(true);
 
             }
